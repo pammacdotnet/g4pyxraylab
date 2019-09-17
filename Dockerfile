@@ -41,8 +41,9 @@ WORKDIR /root
 RUN rm -rf g4pybuild geant4-10.4.2 geant4build
 
 # install the notebook package
-RUN pip install --no-cache --upgrade pip && \
-	pip install --no-cache notebook
+# RUN pip install --no-cache --upgrade pip
+# pip2 install --upgrade pip
+RUN	pip install --no-cache notebook
 
 # create user with a home directory
 ARG NB_USER
