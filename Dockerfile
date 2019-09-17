@@ -29,7 +29,7 @@ RUN cmake /root/geant4-10.4.2/environments/g4py/
 RUN make -j4
 RUN make install
 RUN mv /root/geant4-10.4.2/environments/g4py/lib /root/geant4/g4py 
-ENV PYTHONPATH $PYTHONPATH:/root/geant4/g4py
+#ENV PYTHONPATH $PYTHONPATH:/root/geant4/g4py
 #ENV JUPYTER_PATH $JUPYTER_PATH:/root/geant4/g4py
 ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/root/geant4/lib
 RUN mkdir /root/geant4/share/Geant4-10.4.2/data
@@ -58,5 +58,5 @@ RUN adduser --disabled-password \
 	${NB_USER}
 WORKDIR ${HOME}
 USER ${USER}
-ENV PYTHONPATH $PYTHONPATH:/root/geant4/g4py
-ENV JUPYTER_PATH $JUPYTER_PATH:/root/geant4/g4py
+ENV PYTHONPATH "/root/geant4/g4py:PYTHONPATH"
+#ENV JUPYTER_PATH $JUPYTER_PATH:/root/geant4/g4py
