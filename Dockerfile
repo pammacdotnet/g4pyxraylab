@@ -59,3 +59,4 @@ RUN adduser --disabled-password \
 WORKDIR ${HOME}
 USER ${USER}
 ENV PYTHONPATH $PYTHONPATH:/root/geant4/g4py
+ENV JUPYTER_PATH $JUPYTER_PATH:/root/geant4/g4py
