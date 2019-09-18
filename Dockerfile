@@ -5,7 +5,7 @@ RUN apt-get install -y build-essential cmake python2.7-dev libboost-python-dev \
 	wget zlib1g-dev libxerces-c-dev xorg-dev libx11-dev xorg-dev libglu1-mesa-dev \
 	freeglut3-dev libglew1.5 libglew1.5-dev libglu1-mesa libglu1-mesa-dev \
 	libgl1-mesa-glx libgl1-mesa-dev nano joe python-pip
-RUN	pip install notebook numpy scipy scikit-image traitlets requests bqplot ipywidgets ipyvolume matplotlib pandas ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt ipympl voila jupyterlab ipyvuetify voila-vuetify BeautifulSoup
+RUN	pip install notebook scipy scikit-image traitlets requests bqplot ipywidgets ipyvolume matplotlib pandas ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt ipympl voila jupyterlab ipyvuetify voila-vuetify BeautifulSoup
 
 # create user with a home directory
 ARG NB_USER
