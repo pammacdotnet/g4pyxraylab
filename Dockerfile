@@ -51,3 +51,4 @@ ENV G4ENSDFSTATEDATA ${HOME}/geant4/share/Geant4-10.4.2/data/G4ENSDFSTATE2.2
 ENV G4LEDATA ${HOME}/geant4/share/Geant4-10.4.2/data/G4EMLOW7.3
 WORKDIR ${HOME}
 RUN rm -rf g4pybuild geant4-10.4.2 geant4build
+COPY simulacion.ipynb ${HOME}/
